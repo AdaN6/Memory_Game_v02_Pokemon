@@ -1,4 +1,3 @@
-import { NamedImportsOrExports } from "typescript"
 
 interface IProps {
   people: {
