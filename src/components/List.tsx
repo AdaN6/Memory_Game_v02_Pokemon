@@ -10,13 +10,24 @@ interface IProps {
 
 
 const List: React.FC<IProps> = ({ people }) => {
-  return (
+  
+    const renderList = () => {
+        return people.map((person) => {
+            <li className="List">
+                <div className="List-header">
+                    <img className="List-img" src={person.url} />
+                    <h2>{person.name}</h2>
+                </div>
+                <p> {person.age} years old</p>
+                <p className="List-note">{person.note}</p>
+            </li>
+        })
+    }
+  
+    return (
     <div>
      <ul>
-        {people.map(person => {
-            return (
-            <div>{person.name}</div>)
-        })}
+        {renderList()}
      </ul>
     </div>
   )
