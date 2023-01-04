@@ -1,12 +1,24 @@
 
-interface IProps {
-  people: {
-    name: string
-    age: number
-    url: string
-    note?: string
-  }[]
-}
+// --> 1. import the interface from the parent
+import {IState as IProps} from "../App"
+
+
+// props define interfaces
+
+// interface IProps {
+//   people: {
+//     name: string
+//     age: number
+//     url: string
+//     note?: string
+//   }[]
+// }
+
+// --> 2. do not have to define the props again
+
+
+
+
 
 
 const List: React.FC<IProps> = ({ people }) => {

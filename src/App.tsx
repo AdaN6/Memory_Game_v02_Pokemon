@@ -3,7 +3,8 @@ import './App.css';
 import AddToList from './components/AddToList';
 import List from "./components/List"
 
-interface IState {
+// you can export interface if you have the same props between the parents and the child
+export interface IState {
   people: {
     name: string
     age: number
@@ -29,7 +30,7 @@ function App() {
         People invited to my Party
       </h1>
       <List people={people} />
-      <AddToList/>
+      <AddToList people={people} setPeople={setPeople}/>
     </div>
   );
 }
