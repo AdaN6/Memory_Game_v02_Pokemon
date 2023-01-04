@@ -3,12 +3,7 @@ import {IState as Props} from "../App"
 
 interface IProps {
     people: Props["people"]
-    setPeople: React.Dispatch<React.SetStateAction<{
-    name: string;
-    age: number;
-    url: string;
-    note?: string | undefined;
-}[]>
+    setPeople: React.Dispatch<React.SetStateAction<Props["people"]>
 }
 
 const AddToList = () => {
