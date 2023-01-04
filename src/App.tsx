@@ -17,7 +17,7 @@ function App() {
 
  const [people, setPeople] = useState<IState["people"]>([
   {
-    name:"Tom Hard",
+    name:"Tom Hardy",
     url:"https://www.biography.com/.image/t_share/MTE5NTU2MzE2NjUyOTk2MTA3/9th-annual-ves-awards---red-carpet.jpg",
     age: 35,
     note:"what do you want"
